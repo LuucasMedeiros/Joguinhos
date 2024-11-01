@@ -1,0 +1,192 @@
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    height: 100vp;
+}
+
+img {
+    height: 60px;
+}
+
+h1{
+    padding: 20px 0px;
+    color: #0BB3D9;
+    text-align: center;
+    font-size: clamp(1.8em, 0.5em + 2vw, 2.5em);
+}
+
+main {
+    margin: 10px;
+    flex: 1;
+}
+
+/* Estilos gerais do site */
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#nav-cabecalho {
+    list-style: none;
+    color: white;
+    
+}
+
+.list-hader{
+    display: inline;
+}
+
+/* Estilos de texto para a atividade de contagem objetos */
+
+.text_description p{
+    padding: 10px 0px;
+    text-align: center;
+    color: #424242;
+    font-size: clamp(1.0em, 0.5em + 2vw, 1.5em);
+}
+
+.color_text {
+    margin-left: auto;
+    margin-top: 30px;
+    margin-right: auto;
+    text-align: center;
+    font-size: clamp(1.5em, 1.5em + 2vw, 2.0em);
+}
+
+.rounded {
+    border-radius: 10px; 
+    width: 75px; 
+    height: 75px; 
+  }
+
+/* Estilos container dos ícones infantis */
+
+.kids_icons_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.objects_description {
+    cursor: pointer;
+    text-align: center;
+    margin: 5em; /* Espaço entre os elementos */
+}
+
+.objects_description p {
+    font-size: clamp(1.2em, 0.1em + 2vw, 1.5em);
+    line-height: 1.0;
+    color: #505050;
+    margin-top: 1em;
+}
+
+.objects_description img {
+    border-radius: 6px; 
+}
+
+/* Estilos aplicados para os botões */
+
+.number_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid black;
+    padding: 1em 5em; 
+    border-radius: 8px;
+    font-size: clamp(1.2em, 0.1em + 2vw, 1.5em); 
+    cursor: pointer;
+    margin: 4em; /* Espaço entre os botões */
+}
+
+.button:hover {
+    background-color: rgb(231, 231, 231);
+}
+  
+.button-container {
+    display: flex;
+    text-align: center; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.button-message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #E64A1E;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.btn:hover {
+    background-color: #F86645;
+}
+
+#message {
+    text-align: center;
+    margin: 3em;
+    font-size: clamp(1.5em, 0.1em + 2vw, 2.0em);
+}
+  
+
+/* Aplicando responsividade para o container */
+
+@media screen and (max-width: 1800px){
+    .kids_icons_container {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        padding: 2em;
+    }
+
+    .objects_description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .number_button{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .kids_icons_container {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        padding: 1em;
+    }
+
+    .objects_description{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .number_button{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
